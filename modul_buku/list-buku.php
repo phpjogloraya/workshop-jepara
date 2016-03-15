@@ -50,7 +50,7 @@ include 'proses-list-buku.php';
                     <td><?php echo $buku['kategori_nama'] ?></td>
                     <td><?php echo $buku['buku_deskripsi'] ?></td>
                     <td><?php echo $buku['buku_jumlah'] ?></td>
-                    <td><img src="#"></td>
+                    <td><img class="buku-cover" src="cover/<?php echo $buku['buku_cover'] ?>"></td>
                     <td>
                         <a href="edit-buku.php?id_buku=<?php echo $buku['buku_id']; ?>" class="btn btn-edit">Edit</a>
                         <a href="delete-buku.php?id_buku=<?php echo $buku['buku_id']; ?>" class="btn btn-hapus" onclick="return confirm('Hapus data ini?');">Hapus</a>
